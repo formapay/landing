@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FormaPay.id – Under Development</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      color: white;
+      position: relative;
+    }
+
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(65%) !important;
+    }
+
+    .text-content {
+      position: absolute;
+      top: 8%;
+      right: 5%;
+      width: 40%;
+      max-width: 600px;
+      text-align: left;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 0.3em;
+      color: #00ffd0;
+    }
+
+    h2 {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-weight: normal;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      line-height: 1.6em;
+      margin-bottom: 0.8em;
+	      color: white;
+    }
+
+    a {
+    color: white;
+	text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+
+    @media (max-width: 768px) {
+      .text-content {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        top: 5%;
+      }.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1.2em;
+}
+.button-row {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pill-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.pill-btn:hover {
+  background-color: #4e44ad;
+}
+
+      .footer {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="landing.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Text Content -->
+  <div class="text-content">
+    <h1>🌐 FormaPay.id</h1>
+    <h2>Indonesia’s First Palm Biometric SDK</h2>
+    <p><em>Secure. Touchless. Built for Local Institutions.</em></p>
+
+    <p>👋 Our website is under development.</p>
+    <p>We’re building something exciting — a secure, modular biometric platform for authentication and payments across education, cooperatives, retail, and beyond.</p>
+
+    <p>📩 <strong>For early access or partnership inquiries:</strong></p>
+<div class="button-row">
+  <button class="pill-btn" onclick="window.location.href='mailto:corp@formapay.id'">
+    ✉️&nbsp;&nbsp;corp@formapay.id
+  </button>
+  <button class="pill-btn" onclick="window.location.href='https://wa.me/6282358082898'">
+    💬&nbsp;&nbsp;+62 823-5808-2898
+  </button>
+</div>
+
+
+    <div class="footer">
+      <p>🔒 Powered by PT Forma Inovasi Nusantara</p>
+      <p>Copyright © 2025</p>
+    </div>
+  </div>
+</body>
+</html>
